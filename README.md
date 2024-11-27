@@ -2,9 +2,11 @@
 
 ## Data Set: Multiple Sclerosis
 
-## **Broad Research Question:** How does the microbiome of pMS patients differ from healthy individuals in the context of age and smoking?
+## Broad Research Question: 
+#### How does the microbiome of pMS patients differ from healthy individuals in the context of age and smoking?
 
-## Specific Research Question: Are the microbiomes of older pMS patients different from the microbiomes of older healthy individuals?
+## Specific Research Question: 
+#### Are the microbiomes of older pMS patients different from the microbiomes of older healthy individuals?
 
 ### Meeting Duties Schedule
 https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing
