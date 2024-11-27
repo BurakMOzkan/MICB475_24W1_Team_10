@@ -16,3 +16,9 @@ https://docs.google.com/document/d/1PysRB-60rBfhNbg_Z17GcPOYKCj5WFwWUjsAg6WCV6k/
 
 ### Revised Proposal
 https://docs.google.com/document/d/1iV7qQRtfpALhPRrLTCK5sUBscvs1iyftyRffj4KbCRw/edit?usp=sharing
+
+### Presentation Slide Deck
+https://docs.google.com/presentation/d/17OqHqWITs6IRpJ7XGf8pSCvpfFaTWuFUf1ArXU_JhI0/edit#slide=id.g3180980154e_1_0
+
+### Draft Manuscript
+https://docs.google.com/document/d/1HDJdreUxmozpuCXVfZnlJJJAcC2dGrqY/edit
