@@ -9,8 +9,8 @@
 ### Meeting Duties Schedule
 https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing
 
-### 10 Proposal
+### Proposal
 https://docs.google.com/document/d/1PysRB-60rBfhNbg_Z17GcPOYKCj5WFwWUjsAg6WCV6k/edit?usp=sharing
 
-### Team 10 Revised Proposal
+### Revised Proposal
 https://docs.google.com/document/d/1iV7qQRtfpALhPRrLTCK5sUBscvs1iyftyRffj4KbCRw/edit?usp=sharing
