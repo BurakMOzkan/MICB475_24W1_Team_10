@@ -23,5 +23,6 @@ https://docs.google.com/presentation/d/17OqHqWITs6IRpJ7XGf8pSCvpfFaTWuFUf1ArXU_J
 ### Final Presentation Slide Deck
 https://docs.google.com/presentation/d/1AQh_V13EQhn_NTGIOSJ7a9ZRsfDLfyJE7vZpR6Kzd5o/edit?usp=sharing
 
-### Draft Manuscript
-https://docs.google.com/document/d/1HDJdreUxmozpuCXVfZnlJJJAcC2dGrqY/edit
+### 4 December Manuscript
+[https://docs.google.com/document/d/1HDJdreUxmozpuCXVfZnlJJJAcC2dGrqY/edit
+](https://docs.google.com/document/d/1p-lznWlYvkr-R6OdV3ogunJJFHOQc7qOIC91pVjLIbI/edit?usp=sharing)
