@@ -10,7 +10,7 @@
 
 ### October
 
-[October 1](#Meeting Minutes) | 
+[October 1](#MeetingMinutes) | 
 
 ### November
 
