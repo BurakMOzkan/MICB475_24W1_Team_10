@@ -33,7 +33,7 @@
 
 ### December
 
-[December 2](./Meeting%20Minutes/12_02_Meeting_11)
+[December 2](./Meeting%20Minutes/12_02_Meeting_11.pdf)
 
 ## Code
 
