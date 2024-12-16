@@ -6,7 +6,17 @@
 
 <img width="356" alt="image" src="https://github.com/user-attachments/assets/7da94dbe-f3e4-4ac3-bab5-985ad9433049" />
 
-## Meeting Agendas and Meeting Minutes
+## Meeting Agendas
+
+### October
+
+[October 1](./Agenda/10_01_Agenda_2.pdf) | [October 8](./Agenda/10_08_Agenda_3.pdf) | [October 15](./Agenda/10_15_Agenda_4.pdf) | [October 22](./Agenda/10_22_Agenda_5.pdf) | [October 29](./Agenda/10_29_Agenda_6.pdf)
+
+### November
+
+### December
+
+## Meeting Minutes
 
 ### October
 
