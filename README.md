@@ -38,12 +38,15 @@
 ## Code
 
 [Aim 1](./Code/Aim%201)
+
 [Aim 2](./Code/Aim%202)
+
 [Aim 3](./Code/Aim%203)
 
 ## Outputs
 
 [Aim 1 - Beta Diversity PCA Plots](./Output/Aim1_BetaDiversity_PCA)
+
 [Aim 2 - Differential Abundance (ALDEx2) Volcano Plots](./Output/Aim2_ALDEx2_pMSv.Healthy_VolcanoPlots)
 
 ## Project Documents
