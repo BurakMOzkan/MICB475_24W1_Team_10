@@ -17,7 +17,7 @@
 
 ### November
 
-[November 19](./Agenda/11_19_Agenda.pdf) | [November 25](./Agenda/11_25_Agenda.pdf)
+[November 19](./Agenda/11_19_Agenda.pdf) | [November 26](./Agenda/11_25_Agenda.pdf)
 
 ### December
 
