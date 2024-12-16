@@ -10,7 +10,7 @@
 
 ### October
 
-[October 1](#MeetingMinutes) | 
+[File Name](./Meeting-Minutes/10_01_Meeting_2.pdf) | 
 
 ### November
 
