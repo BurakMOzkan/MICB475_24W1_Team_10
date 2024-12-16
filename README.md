@@ -1,4 +1,6 @@
-# Team 10 - Asha, Burak, Caro, Eli, Poppy
+
+
+## Team 10 - Asha, Burak, Caro, Eli, Poppy
 
 ## Timeline
 
@@ -6,9 +8,19 @@
 
 ## Meeting Agendas and Meeting Minutes
 
+### October
+
+[October 1, 2024](#10_01_Meeting_2.pdf)
+
+### November
+
+### December
+
+
+
+
 ### Meeting Duties Schedule
 https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing
-
 
 
 
