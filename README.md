@@ -6,6 +6,9 @@
 
 <img width="356" alt="image" src="https://github.com/user-attachments/assets/7da94dbe-f3e4-4ac3-bab5-985ad9433049" />
 
+## Meeting Duties Schedule
+https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing
+
 ## Meeting Agendas
 
 ### October
@@ -20,21 +23,15 @@
 
 ### October
 
-[October 1](./Meeting%20Minutes/10_01_Meeting_2.pdf) | [October 8](./Meeting%20Minutes/10_08_Meeting_3.pdf) | [October 22](./Meeting%20Minutes/10_22_Meeting_5.pdf) | [October 29](./Meeting%20Minutes/10_29_Meeting_6.pdf)
+[October 1](./Meeting%20Minutes/11_5_Meeting_7) | [October 8](./Meeting%20Minutes/10_08_Meeting_3.pdf) | [October 22](./Meeting%20Minutes/10_22_Meeting_5.pdf) | [October 29](./Meeting%20Minutes/10_29_Meeting_6.pdf)
 
 ### November
 
+[November 5](./Meeting%20Minutes/10_01_Meeting_2.pdf) | [November 19](./Meeting%20Minutes/10_08_Meeting_3.pdf)
+
 ### December
 
-
-
-
-### Meeting Duties Schedule
-https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing
-
-
-
-
+[December 2](./Meeting%20Minutes/12_02_Meeting_11)
 
 ## Data Set: Multiple Sclerosis
 
