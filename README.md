@@ -5,7 +5,7 @@
 
 ## Timeline
 
-<img width="356" alt="image" src="https://github.com/user-attachments/assets/7da94dbe-f3e4-4ac3-bab5-985ad9433049" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/7da94dbe-f3e4-4ac3-bab5-985ad9433049" />
 
 ## Meeting Agendas
 
