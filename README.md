@@ -1,8 +1,16 @@
 # Team 10 - Asha, Burak, Caro, Eli, Poppy
 
-# Timeline
+## Timeline
 
 <img width="356" alt="image" src="https://github.com/user-attachments/assets/7da94dbe-f3e4-4ac3-bab5-985ad9433049" />
+
+## Meeting Agendas and Meeting Minutes
+
+
+
+
+
+
 
 
 ## Data Set: Multiple Sclerosis
