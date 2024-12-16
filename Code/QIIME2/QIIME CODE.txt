@@ -1,0 +1,236 @@
+## code used to import dataset using manifest file:
+
+qiime tools import \
+  --type "SampleData[SequencesWithQuality]" \
+  --input-format SingleEndFastqManifestPhred33V2 \
+  --input-path ./MS_manifest_filtered.tsv \
+  --output-path ./MS_data/MS_demux_seqs.qza
+
+## note we had to use nano MS_manifest_filtered.tsv to edit the headers, then use head to view the changes before I was able to import
+## this code imports and demultiplexes in one step
+
+## successfully imported the manifest file as MS_demux_seqs.qza 10/10/2024
+
+
+## Create visualization of demultiplexed samples
+qiime demux summarize \
+ --i-data MS_demux_seqs.qza \
+ --o-visualization MS_demux_seqs.qzv
+
+## created visualization file as MS_demux_seqs.qzv 10/11/2024
+
+
+
+## Secure copy the visualization file from the sever to user PC
+scp root@10.19.139.189:/data/MS_data/MS_demux_seqs.qzv .
+## securely copied visualisation file from server to user PC in 475-project-files 10/11/2024
+
+## From QIIME2 visualizer, all bases have median PHRED score > 32, so no truncation is necessary. Additionally, all reads are 151 nts. 
+
+## Denoising and clustering using DADA2 or Deblur? i think we can use DADA2 because Deblur filters out low quality reads, but all our reads are high quality?
+
+# Determine ASVs with DADA2
+qiime dada2 denoise-single \
+  --i-demultiplexed-seqs MS_demux_seqs.qza \
+  --p-trim-left 0 \
+  --p-trunc-len 151 \
+  --o-representative-sequences MS_rep_seqs.qza \
+  --o-table MS_table.qza \
+  --o-denoising-stats MS_stats.qza
+  
+# Visualize DADA2 stats
+qiime metadata tabulate \
+  --m-input-file MS_stats.qza \
+  --o-visualization MS_stats.qzv
+
+# used this to convert csv to tsv
+# used nano again to change sample.id to sample-id
+sed 's/,/\t/g' ms_metadata_filtered.csv > ms_metadata_filtered.tsv
+
+# Visualize ASVs stats
+qiime feature-table summarize \
+  --i-table MS_table.qza \
+  --o-visualization MS_table.qzv \
+  --m-sample-metadata-file /data/ms_metadata_filtered.tsv
+  
+qiime feature-table tabulate-seqs \
+  --i-data MS_rep_seqs.qza \
+  --o-visualization MS_rep_seqs.qzv
+
+#Generated 10/13/2024: MS_rep_seqs.qza, MS_table.qza, MS_stats.qza, MS_stats.qzv, MS_table.qzv, MS_rep_seqs.qzv
+
+## secure copied to personal computer using same code as above
+
+## 	ENDED OFF HERE 10/13/2024
+
+## Training a classifier for assigning taxonomy
+## extract amplicon from referenc database
+## replce ref otus with silva
+
+## we can use the 515-806 because we know that ours comes from V4 region 
+## then train classifier with the new ref-seq file
+## then use trained classifier to assign taxonomy to rep-seqs
+
+# Extract your amplicon of interest from the reference database
+#replace the ref-otus.qza with the representative sequence file on the server (e.g. /mnt/datasets/silva_ref_files/silva-138-99-seqs.qza)
+#replace primer sequences with your correct sequences
+#replace trunc-len with the one you defined in your denoising step
+
+qiime feature-classifier extract-reads \
+  --i-sequences /mnt/datasets/silva_ref_files/silva-138-99-seqs.qza \
+  --p-f-primer GTGCCAGCMGCCGCGGTAA \
+  --p-r-primer GGACTACHVGGGTWTCTAAT \
+  --p-trunc-len 151 \
+  --o-reads MS_ref_seqs_trimmed.qza
+
+completed 10/14/2024
+
+ # Train classifier with your new ref-seq file
+# Replace ref-taxonomy.qza with the representative taxonomy file on the server (e.g. /mnt/datasets/silva_ref_files/silva-138-99-tax.qza)
+
+qiime feature-classifier fit-classifier-naive-bayes \
+  --i-reference-reads MS_ref_seqs_trimmed.qza \
+  --i-reference-taxonomy /mnt/datasets/silva_ref_files/silva-138-99-tax.qza \
+  --o-classifier MS_classifier.qza
+
+completed 10/15/2024
+
+
+# Use the trained classifier to assign taxonomy to your reads (rep-seqs.qza)
+
+qiime feature-classifier classify-sklearn \
+  --i-classifier MS_classifier.qza \
+  --i-reads MS_rep_seqs.qza \
+  --o-classification MS_taxonomy.qza
+
+completed 10/15/2024
+
+## Taxa-based filtering
+qiime taxa filter-table \
+  --i-table MS_table.qza \
+  --i-taxonomy MS_taxonomy.qza \
+  --p-exclude mitochondria,chloroplast \
+  --o-filtered-table MS_table_no_mito_chloro.qza
+
+completed 10/15/2024
+
+## metadatabased filtering
+
+#San Fran filtering
+qiime feature-table filter-samples \
+  --i-table MS_table_no_mito_chloro.qza \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --p-where "[site_x]='San Francisco'" \
+  --o-filtered-table MS_SF_filtered_table.qza
+
+#smoking filtering
+qiime feature-table filter-samples \
+  --i-table MS_SF_filtered_table.qza \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --p-where "[smoke] IN ('smoker', 'formersmoker','nonsmoker')" \
+  --o-filtered-table MS_SF_smoke_filtered_table.qza
+
+
+###### what are we filtering for?  ######
+- san fran in site  -done
+- disease course -done
+- sex - grouping later in R
+- age - grouping later in R
+- smoking -done
+
+## summarize feature table
+
+qiime feature-table summarize \
+  --i-table MS_SF_smoke_filtered_table.qza \
+  --o-visualization MS_SF_smoke_filtered_table.qza.qzv \
+  --m-sample-metadata-file /data/ms_metadata_filtered.tsv 
+
+## summarized filtered feature table sent to personal computer
+
+completed 10/15/2024
+
+
+
+
+
+# Generate a tree for phylogenetic diversity analyses
+qiime phylogeny align-to-tree-mafft-fasttree \
+  --i-sequences MS_rep_seqs.qza \
+  --o-alignment MS_aligned_rep_seqs.qza \
+  --o-masked-alignment MS_masked_aligned_rep_seqs.qza \
+  --o-tree MS_unrooted_tree.qza \
+  --o-rooted-tree MS_rooted_tree.qza 
+
+# Alpha-rarefaction
+qiime diversity alpha-rarefaction \
+  --i-table MS_SF_smoke_filtered_table.qza \
+  --i-phylogeny MS_rooted_tree.qza \
+  --p-max-depth 28263 \ 
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --o-visualization MSalpha_rarefaction.qzv
+
+
+## completed 10/15/2024
+
+## send chris rarefaction curve
+
+#so rarefac didn't work bc sample id got removed somehow, so going to o it in R
+
+#need to convert qza to tsv using:
+
+qiime tools export \
+  --input-path FILE.qza \
+  --output-path FILE_EXPORT_DIR
+
+biom convert \
+-i feature-table.biom \
+--to-tsv \
+-o feature-table.txt
+
+
+## alpha beta diversity metrics
+
+qiime diversity core-metrics-phylogenetic \
+  --i-phylogeny MS_rooted_tree.qza \
+  --i-table MS_SF_smoke_filtered_table.qza \
+  --p-sampling-depth 6154 \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --output-dir MS-core-metrics-results
+
+generated 10/25/2024
+
+## faithPD
+qiime diversity alpha-group-significance \
+  --i-alpha-diversity faith_pd_vector.qza \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --o-visualization faith-pd-group-significance.qzv
+
+## shannon
+qiime diversity alpha-group-significance \
+  --i-alpha-diversity shannon_vector.qza \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --o-visualization shannon_significance.qzv
+
+## eveness
+qiime diversity alpha-group-significance \
+  --i-alpha-diversity evenness_vector.qza \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --o-visualization evenness_significance.qzv
+
+## observed features
+qiime diversity alpha-group-significance \
+  --i-alpha-diversity observed_features_vector.qza \
+  --m-metadata-file /data/ms_metadata_filtered.tsv \
+  --o-visualization observed_feature_significance.qzv
+
+
+
+## picrust exporting and converting to tsv
+qiime tools export \
+  --input-path q2-picrust2_output/pathway_abundance.qza \ ##changed to ec_metagnome.qza and ko_metagenome.qza 
+  --output-path pathabun_exported ## changed to ecmeta_exported and kometa_exported
+
+biom convert \
+   -i pathabun_exported/feature-table.biom \
+   -o pathabun_exported/pathway_abundance.tsv \ ## changed to ec_metagenome.tsv and ko_metagenome.tsv
+   --to-tsv
