@@ -6,10 +6,9 @@
 
 <img width="356" alt="image" src="https://github.com/user-attachments/assets/7da94dbe-f3e4-4ac3-bab5-985ad9433049" />
 
-## Meeting Duties Schedule
-https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing
-
 ## Meeting Agendas
+
+[Meeting Duties Schedule](https://docs.google.com/spreadsheets/d/1S1OX5y_4AEYXJSsaN59f9LpgxVjNWJQMQHcdzf0u2Wg/edit?usp=sharing)
 
 ### October
 
