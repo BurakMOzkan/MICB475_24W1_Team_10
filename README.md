@@ -1,4 +1,5 @@
 
+# Building a Predictive Model of Progressive Multiple Sclerosis Using Taxonomic Biomarkers
 
 ## Team 10 - Asha, Burak, Caro, Eli, Poppy
 
@@ -34,26 +35,21 @@
 
 [December 2](./Meeting%20Minutes/12_02_Meeting_11)
 
-## Data Set: Multiple Sclerosis
+## Code
 
-## Broad Research Question: 
-#### How does the microbiome of pMS patients differ from healthy individuals in the context of age and smoking?
+[Aim 1](./Code/Aim%201)
+[Aim 2](./Code/Aim%202)
+[Aim 3](./Code/Aim%203)
 
-## Specific Research Question: 
-#### Are the microbiomes of older pMS patients different from the microbiomes of older healthy individuals?
+## Outputs
 
-### Proposal
-https://docs.google.com/document/d/1PysRB-60rBfhNbg_Z17GcPOYKCj5WFwWUjsAg6WCV6k/edit?usp=sharing
+[Aim 1 - Beta Diversity PCA Plots](./Output/Aim1_BetaDiversity_PCA)
+[Aim 2 - Differential Abundance (ALDEx2) Volcano Plots](./Output/Aim2_ALDEx2_pMSv.Healthy_VolcanoPlots)
 
-### Revised Proposal
-https://docs.google.com/document/d/1iV7qQRtfpALhPRrLTCK5sUBscvs1iyftyRffj4KbCRw/edit?usp=sharing
+## Project Documents
 
-### Meeting Presentation Slide Deck
-https://docs.google.com/presentation/d/17OqHqWITs6IRpJ7XGf8pSCvpfFaTWuFUf1ArXU_JhI0/edit#slide=id.g3180980154e_1_0
+[Project Proposal](https://docs.google.com/document/d/1iV7qQRtfpALhPRrLTCK5sUBscvs1iyftyRffj4KbCRw/edit?usp=sharing)
 
-### Final Presentation Slide Deck
-https://docs.google.com/presentation/d/1AQh_V13EQhn_NTGIOSJ7a9ZRsfDLfyJE7vZpR6Kzd5o/edit?usp=sharing
+[Oral Presentation](https://docs.google.com/presentation/d/1AQh_V13EQhn_NTGIOSJ7a9ZRsfDLfyJE7vZpR6Kzd5o/edit?usp=sharing)
 
-### 4 December Manuscript
-[https://docs.google.com/document/d/1HDJdreUxmozpuCXVfZnlJJJAcC2dGrqY/edit
-](https://docs.google.com/document/d/1p-lznWlYvkr-R6OdV3ogunJJFHOQc7qOIC91pVjLIbI/edit?usp=sharing)
+[Manuscript](https://docs.google.com/document/d/1p-lznWlYvkr-R6OdV3ogunJJFHOQc7qOIC91pVjLIbI/edit?usp=sharing)
