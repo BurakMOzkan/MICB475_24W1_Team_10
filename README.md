@@ -10,7 +10,7 @@
 
 ### October
 
-[October 1, 2024](#10_01_Meeting_2.pdf)
+[October 1](#Meeting Minutes) | 
 
 ### November
 
