@@ -21,6 +21,8 @@
 
 ### December
 
+[December 2](./Agenda/12_02_Agenda_11.pdf)
+
 ## Meeting Minutes
 
 ### October
