@@ -180,6 +180,12 @@ kruskal_chao1 <- kruskal.test(Chao1 ~ `age_disease`, dat = samp_dat_wdiv)
 kruskal_chao1
 #chi-sqaured = 5.804, df = 3, p-value = 0.1215
 
+####observed features####
+##kruskal wallis
+kruskal_observed <- kruskal.test(Observed ~ `age_disease`, dat = samp_dat_wdiv)
+kruskal_observed
+#chi-squared = 5.2372, df = 3, p-value = 0.1552
+
 
 ##### INVSIMPS #####
 ##ANOVA LOG TRANS##
