@@ -27,7 +27,7 @@
 
 ### October
 
-[October 1](./Meeting%20Minutes/10_01_Meeting_2.pdf) | [October 8](./Meeting%20Minutes/10_08_Meeting_3.pdf) | [October 22](./Meeting%20Minutes/10_22_Meeting_5.pdf) | [October 29](./Meeting%20Minutes/10_29_Meeting_6.pdf)
+[October 1](./Meeting%20Minutes/10_01_Meeting_2.pdf) | [October 8](./Meeting%20Minutes/10_08_Meeting_3.pdf) | [October 15](./Agenda/10_15_Meeting_4.pdf) |  [October 22](./Meeting%20Minutes/10_22_Meeting_5.pdf) | [October 29](./Meeting%20Minutes/10_29_Meeting_6.pdf)
 
 ### November
 
