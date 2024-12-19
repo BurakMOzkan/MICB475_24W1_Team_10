@@ -57,4 +57,4 @@
 
 [Oral Presentation](https://docs.google.com/presentation/d/1AQh_V13EQhn_NTGIOSJ7a9ZRsfDLfyJE7vZpR6Kzd5o/edit?usp=sharing)
 
-[Manuscript](https://docs.google.com/document/d/1p-lznWlYvkr-R6OdV3ogunJJFHOQc7qOIC91pVjLIbI/edit?usp=sharing)
+[Manuscript]([https://docs.google.com/document/d/1jkYjoCrlVHq_NthwGdV2HwXXBj5U94Q18oA9842Vci8/edit?tab=t.0])
