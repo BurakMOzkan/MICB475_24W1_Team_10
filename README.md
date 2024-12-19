@@ -31,7 +31,7 @@
 
 ### November
 
-[November 5](./Meeting%20Minutes/11_5_Meeting_7.pdf) | [November 19](./Meeting%20Minutes/11_19_Meeting_8.pdf)
+[November 5](./Meeting%20Minutes/11_5_Meeting_7.pdf) | [November 19](./Meeting%20Minutes/11_19_Meeting_8.pdf) | [November 25](./Meeting%20Minutes/11_25_Meeting_9.pdf)
 
 ### December
 
